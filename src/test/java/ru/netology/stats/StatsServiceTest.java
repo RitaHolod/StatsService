@@ -21,7 +21,7 @@ public class StatsServiceTest {
 
     @Test
 
-    public void averageAmountOfSalesTest(){
+    public void averageAmountOfSalesTest() {
         StatsService service = new StatsService();
         long expected = 15;
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -32,29 +32,29 @@ public class StatsServiceTest {
 
     @Test
 
-    public void monthMaxTest(){
+    public void monthMaxTest() {
         StatsService service = new StatsService();
         int expected = 8;
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int actual = service.monthMax(sales);
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
 
-    public void monthMinTest(){
+    public void monthMinTest() {
         StatsService service = new StatsService();
         int expected = 9;
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int actual = service.monthMin(sales);
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
 
-    public void lowerAverageTest(){
+    public void lowerAverageTest() {
 
         StatsService service = new StatsService();
         int expected = 5;
@@ -66,7 +66,7 @@ public class StatsServiceTest {
 
     @Test
 
-    public void higherAverageTest(){
+    public void higherAverageTest() {
         StatsService service = new StatsService();
 
         int expected = 5;
